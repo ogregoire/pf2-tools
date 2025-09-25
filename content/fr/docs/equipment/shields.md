@@ -9,7 +9,7 @@ Référence pour les boucliers.
 
 ## Utilisation des boucliers
 
-Un bouclier doit être attaché à votre bras et tenu dans une main. Pour obtenir le bonus de CA du bouclier, vous devez utiliser l'action **Lever un bouclier** ◆, qui accorde le bonus de circonstance à la CA du bouclier jusqu'au début de votre prochain tour. Les targes sont une exception — elles n'occupent pas votre main, vous pouvez donc Lever un bouclier avec une targe si votre main est libre.
+Un bouclier doit être attaché à votre bras et tenu dans une main. Pour obtenir le bonus de CA du bouclier, vous devez utiliser l'action **Lever un bouclier** ◆, qui accorde le bonus de circonstance à la CA du bouclier jusqu'au début de votre prochain tour. Les targes sont une exception — elles n'occupent pas votre main, vous pouvez donc Lever un bouclier avec une targe si votre main est libre ou tient un objet simple et léger (donc pas une arme).
 
 Les pavois offrent une protection supplémentaire : lorsque vous utilisez **Se mettre à couvert** ◆ avec un pavois levé, ils accordent +4 CA au lieu des +2 CA normaux.
 

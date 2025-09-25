@@ -9,7 +9,7 @@ Shield reference.
 
 ## Using Shields
 
-A shield must be strapped to your arm and held in one hand. To gain the shield's AC bonus, you must use the **Raise a Shield** ◆ action, which grants the shield's circumstance bonus to AC until the start of your next turn. Bucklers are an exception—they don't take up your hand, so you can Raise a Shield with a buckler if your hand is free.
+A shield must be strapped to your arm and held in one hand. To gain the shield's AC bonus, you must use the **Raise a Shield** ◆ action, which grants the shield's circumstance bonus to AC until the start of your next turn. Bucklers are an exception—they don't take up your hand, so you can Raise a Shield with a buckler if your hand is free or holding a simple, lightweight object (so no weapons).
 
 **Tower shields** provide additional protection: when you **Take Cover** ◆ while raised, they grant +4 AC instead of the normal +2 AC.
 
