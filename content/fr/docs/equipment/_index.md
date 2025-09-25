@@ -1,6 +1,6 @@
 ---
 title: "Équipement"
-weight: 1
+weight: 2
 bookCollapseSection: false
 ---
 
