@@ -1,7 +1,7 @@
 ---
 title: "DM"
 weight: 1
-bookCollapseSection: false
+bookCollapseSection: true
 ---
 
 # DM

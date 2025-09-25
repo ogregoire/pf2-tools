@@ -1,7 +1,7 @@
 ---
 title: "Equipment"
 weight: 2
-bookCollapseSection: false
+bookCollapseSection: true
 ---
 
 # Equipment
