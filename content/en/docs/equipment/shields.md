@@ -22,7 +22,7 @@ Shield reference tool for Pathfinder 2e Remastered.
 
 ## Reinforcing Runes
 
-**Source:** Player Core pg. 285
+**Source:** GM Core pg. 232
 
 | Rune | Level | Price | Hardness Bonus | HP Bonus | BT Bonus | Maximum |
 |------|-------|-------|----------------|----------|----------|---------|
@@ -33,7 +33,7 @@ Shield reference tool for Pathfinder 2e Remastered.
 | Major | 16 | 8,000 gp | +5 | +84 | +42 | 17 Hardness, 136 HP, 68 BT |
 | Supreme | 19 | 32,000 gp | +7 | +108 | +54 | 20 Hardness, 160 HP, 80 BT |
 
-## Shield Calculator
+## Shield Assembler
 
 <div class="shield-calculator">
   <div>

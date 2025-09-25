@@ -44,10 +44,10 @@ const shieldRuneNames = {
     none: 'Aucune',
     minor: 'Mineure',
     lesser: 'Inférieure',
-    moderate: 'Modérée',
+    moderate: 'Moyenne',
     greater: 'Supérieure',
     major: 'Majeure',
-    supreme: 'Suprême'
+    supreme: 'Ultime'
   }
 };
 

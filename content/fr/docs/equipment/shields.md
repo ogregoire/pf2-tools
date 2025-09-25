@@ -28,12 +28,12 @@ Outil de référence pour les boucliers de Pathfinder 2e Remastered.
 |------|--------|------|-------------------|----------|----------|---------|
 | Mineure | 4 | 75 po | +3 | +44 | +22 | Solidité 8, 64 PV et SR 32 |
 | Inférieure | 7 | 300 po | +3 | +52 | +26 | Solidité 10, 80 PV et SR 40 |
-| Modérée | 10 | 900 po | +3 | +64 | +32 | Solidité 13, 104 PV et SR 52 |
+| Moyenne | 10 | 900 po | +3 | +64 | +32 | Solidité 13, 104 PV et SR 52 |
 | Supérieure | 13 | 2 500 po | +5 | +80 | +40 | Solidité 15, 120 PV et SR 60 |
 | Majeure | 16 | 8 000 po | +5 | +84 | +42 | Solidité 17, 136 PV et SR 68 |
-| Suprême | 19 | 32 000 po | +7 | +108 | +54 | Solidité 20, 160 PV et SR 80 |
+| Ultime | 19 | 32 000 po | +7 | +108 | +54 | Solidité 20, 160 PV et SR 80 |
 
-## Calculateur de bouclier
+## Assembleur de bouclier
 
 <div class="shield-calculator">
   <div>
@@ -52,10 +52,10 @@ Outil de référence pour les boucliers de Pathfinder 2e Remastered.
       <option value="none" selected>Aucune</option>
       <option value="minor">Mineure</option>
       <option value="lesser">Inférieure</option>
-      <option value="moderate">Modérée</option>
+      <option value="moderate">Moyenne</option>
       <option value="greater">Supérieure</option>
       <option value="major">Majeure</option>
-      <option value="supreme">Suprême</option>
+      <option value="supreme">Ultime</option>
     </select>
   </div>
 
