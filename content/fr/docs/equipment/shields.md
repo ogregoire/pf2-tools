@@ -24,7 +24,7 @@ Les boucliers ont une **Solidité** (réduction de dégâts), des **Points de vi
 - si les PV tombent à ou sous le SR, le bouclier devient **endommagé** et ne peut pas être utilisé sans être réparé avant ;
 - si les PV tombent à 0, le bouclier est **détruit** et ne peut pas être réparé.
 
-**Réparer un bouclier** nécessite l'activité Réparation (10 minutes, test d'Artisanat). Le DD est basé sur le niveau et la rareté du bouclier (voir DD de réparation dans l'assembleur ci-dessous). En cas de succès, restaurez 5 PV par rang de maîtrise ; en cas de succès critique, restaurez 10 PV par rang de maîtrise. Les boucliers détruits ne peuvent pas être réparés.
+**Réparer un bouclier** nécessite l'activité Réparation (10 minutes, test d'Artisanat). Le DD est basé sur le niveau et la rareté du bouclier (voir DD de réparation dans l'assembleur ci-dessous). En cas de succès, restaurez 5 PV par rang de maîtrise ; en cas de succès critique, restaurez 10 PV par rang de maîtrise ; en cas d'échec critique, infligez 2d6 dégâts au bouclier (reductible par la Solidité). Les boucliers détruits ne peuvent pas être réparés.
 
 **Source :** Livre des joueurs, p. 274, 233
 

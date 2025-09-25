@@ -24,7 +24,7 @@ Shields have **Hardness** (damage reduction), **Hit Points** (HP), and a **Broke
 - When HP drops to or below BT, the shield becomes **broken** and can't be used
 - When HP drops to 0, the shield is **destroyed** and can't be repaired
 
-**Repairing a shield** requires the Repair activity (10 minutes, Crafting check). The DC is based on the shield's level and rarity (see Repair DC in the assembler below). On success, restore 5 HP per proficiency rank; on critical success, restore 10 HP per proficiency rank. Destroyed shields cannot be repaired.
+**Repairing a shield** requires the Repair activity (10 minutes, Crafting check). The DC is based on the shield's level and rarity (see Repair DC in the assembler below). On success, restore 5 HP per proficiency rank; on critical success, restore 10 HP per proficiency rank; on critical failure, deal 2d6 damage to the item (minus the Hardness). Destroyed shields cannot be repaired.
 
 **Source:** Player Core pg. 277, 236
 
