@@ -47,12 +47,12 @@ Les boucliers ont une **Solidité** (réduction de dégâts), des **Points de vi
 
 | Rune | Niveau | Prix | Bonus de solidité | Bonus PV | Bonus SR | Maximum |
 |------|--------|------|-------------------|----------|----------|---------|
-| Mineure | 4 | 75 po | +3 | +44 | +22 | Solidité 8, 64 PV et SR 32 |
-| Inférieure | 7 | 300 po | +3 | +52 | +26 | Solidité 10, 80 PV et SR 40 |
-| Moyenne | 10 | 900 po | +3 | +64 | +32 | Solidité 13, 104 PV et SR 52 |
-| Supérieure | 13 | 2 500 po | +5 | +80 | +40 | Solidité 15, 120 PV et SR 60 |
-| Majeure | 16 | 8 000 po | +5 | +84 | +42 | Solidité 17, 136 PV et SR 68 |
-| Ultime | 19 | 32 000 po | +7 | +108 | +54 | Solidité 20, 160 PV et SR 80 |
+| Mineure | 4 | 75&nbsp;po | +3 | +44 | +22 | Solidité&nbsp;8, 64&nbsp;PV et SR&nbsp;32 |
+| Inférieure | 7 | 300&nbsp;po | +3 | +52 | +26 | Solidité&nbsp;10, 80&nbsp;PV et SR&nbsp;40 |
+| Moyenne | 10 | 900&nbsp;po | +3 | +64 | +32 | Solidité&nbsp;13, 104&nbsp;PV et SR&nbsp;52 |
+| Supérieure | 13 | 2&nbsp;500&nbsp;po | +5 | +80 | +40 | Solidité&nbsp;15, 120&nbsp;PV et SR&nbsp;60 |
+| Majeure | 16 | 8&nbsp;000&nbsp;po | +5 | +84 | +42 | Solidité&nbsp;17, 136&nbsp;PV et SR&nbsp;68 |
+| Ultime | 19 | 32&nbsp;000&nbsp;po | +7 | +108 | +54 | Solidité&nbsp;20, 160&nbsp;PV et SR&nbsp;80 |
 
 ## Assembleur de bouclier
 
