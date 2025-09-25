@@ -20,3 +20,8 @@ theme = 'hugo-book'
   description = 'Pathfinder 2e Remastered Tools'
   BookRepo = 'https://github.com/ogregoire/pf2-tools'
   BookSection = '/'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
