@@ -99,7 +99,9 @@ function calculateShield(lang = 'en') {
   const nbsp = '\u00A0';
   const speedPenaltyText = shield.speedPenalty === 0
     ? '—'
-    : `${shield.speedPenalty}${nbsp}${labels.ft}`;
+    : (lang === 'fr'
+      ? `${(shield.speedPenalty * 0.3).toLocaleString('fr-FR')}${nbsp}m`
+      : `${shield.speedPenalty}${nbsp}${labels.ft}`);
 
   const fullName = runeName !== labels.none
     ? (lang === 'fr'
