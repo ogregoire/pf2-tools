@@ -1,6 +1,6 @@
 ---
 title: "Difficulty Classes"
-weight: 1
+weight: 2
 ---
 
 # Difficulty Classes
