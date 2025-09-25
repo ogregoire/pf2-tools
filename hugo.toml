@@ -1,7 +1,6 @@
 baseURL = 'https://ogregoire.github.io/pf2-tools/'
 languageCode = 'en-us'
 title = 'PF2 Tools'
-theme = ''
 
 [languages]
   [languages.en]
