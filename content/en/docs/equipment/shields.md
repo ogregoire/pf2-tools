@@ -5,7 +5,7 @@ weight: 1
 
 # Shields
 
-Shield reference tool for Pathfinder 2e Remastered.
+Shield reference.
 
 ## Using Shields
 

@@ -5,7 +5,7 @@ weight: 1
 
 # Boucliers
 
-Outil de référence pour les boucliers de Pathfinder 2e Remastered.
+Référence pour les boucliers.
 
 ## Utilisation des boucliers
 
