@@ -1,0 +1,18 @@
+baseURL = 'https://ogregoire.github.io/pf2-tools/'
+languageCode = 'en-us'
+title = 'PF2 Tools'
+theme = ''
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    title = 'PF2 Tools'
+
+  [languages.fr]
+    languageName = 'Français'
+    weight = 2
+    title = 'Outils PF2'
+
+[params]
+  description = 'Pathfinder 2e Remastered Tools'
