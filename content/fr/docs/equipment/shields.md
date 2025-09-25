@@ -9,19 +9,19 @@ Outil de référence pour les boucliers de Pathfinder 2e Remastered.
 
 ## Utilisation des boucliers
 
-Un bouclier doit être attaché à votre bras et tenu dans une main. Pour obtenir le bonus de CA du bouclier, vous devez utiliser l'action **Lever un bouclier** (une action), qui accorde le bonus de circonstance à la CA du bouclier jusqu'au début de votre prochain tour. Les targes sont une exception — elles n'occupent pas votre main, vous pouvez donc Lever un bouclier avec une targe si votre main est libre.
+Un bouclier doit être attaché à votre bras et tenu dans une main. Pour obtenir le bonus de CA du bouclier, vous devez utiliser l'action **Lever un bouclier** ◆, qui accorde le bonus de circonstance à la CA du bouclier jusqu'au début de votre prochain tour. Les targes sont une exception — elles n'occupent pas votre main, vous pouvez donc Lever un bouclier avec une targe si votre main est libre.
 
-**Les pavois** offrent une protection supplémentaire : lorsque vous utilisez Se mettre à couvert avec un pavois levé, ils accordent +4 CA au lieu des +2 CA normaux.
+Les pavois offrent une protection supplémentaire : lorsque vous utilisez **Se mettre à couvert** ◆ avec un pavois levé, ils accordent +4 CA au lieu des +2 CA normaux.
 
 ### Blocage au bouclier
 
-Avec la réaction **Blocage au bouclier** (nécessite le don Blocage au bouclier), vous pouvez utiliser votre bouclier pour réduire les dégâts. Le bouclier prévient des dégâts égaux à sa Solidité. Tous les dégâts restants sont infligés tant sur vous que sur le bouclier. Cela peut endommager ou détruire votre bouclier.
+Avec la réaction **Blocage au bouclier** ↺ (nécessite le don Blocage au bouclier), vous pouvez utiliser votre bouclier pour réduire les dégâts. Le bouclier prévient des dégâts égaux à sa Solidité. Tous les dégâts restants sont infligés tant sur vous que sur le bouclier. Cela peut endommager ou détruire votre bouclier.
 
 ### Dégâts et réparation des boucliers
 
-Les boucliers ont une **Solidité** (réduction de dégâts), des **Points de vie** (PV) et un **Seuil de rupturei** (SR). Lorsqu'un bouclier subit des dégâts :
+Les boucliers ont une **Solidité** (réduction de dégâts), des **Points de vie** (PV) et un **Seuil de rupture** (SR). Lorsqu'un bouclier subit des dégâts :
 - la Solidité du bouclier réduit les dégâts ;
-- si les PV tombent à ou sous le SR, le bouclier devient **brisé** et ne peut pas être utilisé sans être réparé avant ;
+- si les PV tombent à ou sous le SR, le bouclier devient **endommagé** et ne peut pas être utilisé sans être réparé avant ;
 - si les PV tombent à 0, le bouclier est **détruit** et ne peut pas être réparé.
 
 **Réparer un bouclier** nécessite l'activité Réparation (10 minutes, test d'Artisanat). Le DD est basé sur le niveau et la rareté du bouclier (voir DD de réparation dans l'assembleur ci-dessous). En cas de succès, restaurez 5 PV par rang de maîtrise ; en cas de succès critique, restaurez 10 PV par rang de maîtrise. Les boucliers détruits ne peuvent pas être réparés.

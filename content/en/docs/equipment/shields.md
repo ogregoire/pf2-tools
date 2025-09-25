@@ -9,13 +9,13 @@ Shield reference tool for Pathfinder 2e Remastered.
 
 ## Using Shields
 
-A shield must be strapped to your arm and held in one hand. To gain the shield's AC bonus, you must use the **Raise a Shield** action (one action), which grants the shield's circumstance bonus to AC until the start of your next turn. Bucklers are an exception—they don't take up your hand, so you can Raise a Shield with a buckler if your hand is free.
+A shield must be strapped to your arm and held in one hand. To gain the shield's AC bonus, you must use the **Raise a Shield** ◆ action, which grants the shield's circumstance bonus to AC until the start of your next turn. Bucklers are an exception—they don't take up your hand, so you can Raise a Shield with a buckler if your hand is free.
 
-**Tower shields** provide additional protection: when you Take Cover while raised, they grant +4 AC instead of the normal +2 AC.
+**Tower shields** provide additional protection: when you **Take Cover** ◆ while raised, they grant +4 AC instead of the normal +2 AC.
 
 ### Shield Block
 
-With the **Shield Block** reaction (requires the Shield Block feat), you can use your shield to reduce damage. The shield prevents damage equal to its Hardness. Any remaining damage is split between you and the shield. This can damage or destroy your shield.
+With the **Shield Block** ↺ reaction (requires the Shield Block feat), you can use your shield to reduce damage. The shield prevents damage equal to its Hardness. Any remaining damage is split between you and the shield. This can damage or destroy your shield.
 
 ### Shield Damage and Repair
 
