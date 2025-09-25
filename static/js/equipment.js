@@ -101,8 +101,14 @@ function calculateShield(lang = 'en') {
     ? '—'
     : `${shield.speedPenalty}${nbsp}${labels.ft}`;
 
+  const fullName = runeName !== labels.none
+    ? (lang === 'fr'
+      ? `${shieldName} + rune de renfort ${runeName.toLowerCase()}`
+      : `${shieldName} + ${runeName.toLowerCase()} reinforcing rune`)
+    : shieldName;
+
   result.innerHTML = `
-    <h4>${shieldName}${runeName !== labels.none ? ' + ' + runeName : ''}</h4>
+    <h4>${fullName}</h4>
     <ul>
       <li><strong>${labels.price}:</strong> ${totalPrice}${nbsp}${labels.gp}</li>
       <li><strong>${labels.acBonus}:</strong> +${shield.acBonus}</li>

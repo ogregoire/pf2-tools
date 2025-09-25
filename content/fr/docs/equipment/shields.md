@@ -46,7 +46,7 @@ Les boucliers détruits ne peuvent pas être réparés.
 
 *Le pavois accorde +2 CA normalement, ou +4 CA lors de l'utilisation de l'action Se mettre à couvert.
 
-## Runes de renforcement
+## Runes de renfort
 
 **Source:** Livre du MJ, p. 232
 
@@ -73,7 +73,7 @@ Les boucliers détruits ne peuvent pas être réparés.
   </div>
 
   <div>
-    <label for="rune-select-fr">Rune de renforcement :</label>
+    <label for="rune-select-fr">Rune de renfort :</label>
     <select id="rune-select-fr" onchange="calculateShield('fr')">
       <option value="none" selected>Aucune</option>
       <option value="minor">Mineure</option>
