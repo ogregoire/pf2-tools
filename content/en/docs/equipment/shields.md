@@ -7,6 +7,27 @@ weight: 1
 
 Shield reference tool for Pathfinder 2e Remastered.
 
+## Using Shields
+
+A shield must be strapped to your arm and held in one hand. To gain the shield's AC bonus, you must use the **Raise a Shield** action (one action), which grants the shield's circumstance bonus to AC until the start of your next turn. Bucklers are an exception—they don't take up your hand, so you can Raise a Shield with a buckler if your hand is free.
+
+**Tower shields** provide additional protection: when you Take Cover while raised, they grant +4 AC instead of the normal +2 AC.
+
+### Shield Block
+
+With the **Shield Block** reaction (requires the Shield Block feat), you can use your shield to reduce damage. The shield prevents damage equal to its Hardness. Any remaining damage is split between you and the shield. This can damage or destroy your shield.
+
+### Shield Damage and Repair
+
+Shields have **Hardness** (damage reduction), **Hit Points** (HP), and a **Broken Threshold** (BT). When a shield takes damage:
+- The shield's Hardness reduces the damage
+- When HP drops to or below BT, the shield becomes **broken** and can't be used
+- When HP drops to 0, the shield is **destroyed** and can't be repaired
+
+**Repairing a shield** requires the Repair activity (10 minutes, Crafting check). The DC is based on the shield's level and rarity (see Repair DC in the assembler below). On success, restore 5 HP per proficiency rank; on critical success, restore 10 HP per proficiency rank. Destroyed shields cannot be repaired.
+
+**Source:** Player Core pg. 277, 236
+
 ## Base Shields
 
 **Source:** Player Core pg. 277

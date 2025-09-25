@@ -96,19 +96,20 @@ function calculateShield(lang = 'en') {
     none: 'None'
   };
 
+  const nbsp = '\u00A0';
   const speedPenaltyText = shield.speedPenalty === 0
     ? '—'
-    : `${shield.speedPenalty} ${labels.ft}`;
+    : `${shield.speedPenalty}${nbsp}${labels.ft}`;
 
   result.innerHTML = `
     <h4>${shieldName}${runeName !== labels.none ? ' + ' + runeName : ''}</h4>
     <ul>
-      <li><strong>${labels.price}:</strong> ${totalPrice} ${labels.gp}</li>
+      <li><strong>${labels.price}:</strong> ${totalPrice}${nbsp}${labels.gp}</li>
       <li><strong>${labels.acBonus}:</strong> +${shield.acBonus}</li>
       <li><strong>${labels.speedPenalty}:</strong> ${speedPenaltyText}</li>
       <li><strong>${labels.bulk}:</strong> ${shield.bulk}</li>
       <li><strong>${labels.hardness}:</strong> ${finalHardness}</li>
-      <li><strong>${labels.hp}:</strong> ${finalHP} (${labels.bt}${finalBT})</li>
+      <li><strong>${labels.hp}:</strong> ${finalHP}${nbsp}(${labels.bt}${nbsp}${finalBT})</li>
       <li><strong>${labels.repairDC}:</strong> ${repairDC}</li>
     </ul>
   `;
