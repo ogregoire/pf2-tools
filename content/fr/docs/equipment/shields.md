@@ -22,7 +22,7 @@ Outil de référence pour les boucliers de Pathfinder 2e Remastered.
 
 ## Runes de renforcement
 
-**Source:** Livre des joueurs, p. 285
+**Source:** Livre du MJ, p. 232
 
 | Rune | Niveau | Prix | Bonus de solidité | Bonus PV | Bonus SR | Maximum |
 |------|--------|------|-------------------|----------|----------|---------|
@@ -62,5 +62,8 @@ Outil de référence pour les boucliers de Pathfinder 2e Remastered.
   <div id="shield-result-fr"></div>
 </div>
 
-<script src="/pf2-tools/js/equipment.js"></script>
-<script>calculateShield('fr');</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  calculateShield('fr');
+});
+</script>

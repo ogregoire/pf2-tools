@@ -62,5 +62,8 @@ Shield reference tool for Pathfinder 2e Remastered.
   <div id="shield-result-en"></div>
 </div>
 
-<script src="/pf2-tools/js/equipment.js"></script>
-<script>calculateShield('en');</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  calculateShield('en');
+});
+</script>
