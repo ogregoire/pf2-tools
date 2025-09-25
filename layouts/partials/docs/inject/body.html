@@ -1,3 +1,7 @@
+{{ if and .File (in .File.Path "dm") }}
+<script src="{{ "js/dm.js" | relURL }}"></script>
+{{ end }}
 {{ if and .File (in .File.Path "equipment") }}
+<script src="{{ "js/dm.js" | relURL }}"></script>
 <script src="{{ "js/equipment.js" | relURL }}"></script>
 {{ end }}

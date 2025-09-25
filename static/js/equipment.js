@@ -1,8 +1,8 @@
 const shieldData = {
-  buckler: { price: 1, acBonus: 1, speedPenalty: 0, bulk: 'L', hardness: 3, hp: 6, bt: 3 },
-  wooden: { price: 1, acBonus: 2, speedPenalty: 0, bulk: 1, hardness: 3, hp: 12, bt: 6 },
-  steel: { price: 2, acBonus: 2, speedPenalty: 0, bulk: 1, hardness: 5, hp: 20, bt: 10 },
-  tower: { price: 10, acBonus: '2/4*', speedPenalty: -5, bulk: 4, hardness: 5, hp: 20, bt: 10 }
+  buckler: { level: 0, price: 1, acBonus: 1, speedPenalty: 0, bulk: 'L', hardness: 3, hp: 6, bt: 3, rarity: 'common' },
+  wooden: { level: 0, price: 1, acBonus: 2, speedPenalty: 0, bulk: 1, hardness: 3, hp: 12, bt: 6, rarity: 'common' },
+  steel: { level: 0, price: 2, acBonus: 2, speedPenalty: 0, bulk: 1, hardness: 5, hp: 20, bt: 10, rarity: 'common' },
+  tower: { level: 0, price: 10, acBonus: '2/4*', speedPenalty: -5, bulk: 4, hardness: 5, hp: 20, bt: 10, rarity: 'common' }
 };
 
 const shieldNames = {
@@ -61,10 +61,12 @@ function calculateShield(lang = 'en') {
   const shieldName = shieldNames[lang][shieldSelect.value];
   const runeName = shieldRuneNames[lang][runeSelect.value];
 
+  const finalLevel = Math.max(shield.level, rune.level);
   const finalHardness = Math.min(shield.hardness + rune.hardnessBonus, rune.maxHardness);
   const finalHP = Math.min(shield.hp + rune.hpBonus, rune.maxHP);
   const finalBT = Math.min(shield.bt + rune.btBonus, rune.maxBT);
   const totalPrice = shield.price + rune.price;
+  const repairDC = getRepairDC(finalLevel, shield.rarity);
 
   const labels = lang === 'fr' ? {
     price: 'Prix total',
@@ -74,6 +76,7 @@ function calculateShield(lang = 'en') {
     hardness: 'Solidité',
     hp: 'PV',
     bt: 'SR',
+    repairDC: 'DD de réparation',
     gp: 'po',
     ft: 'pi',
     m: 'm',
@@ -86,6 +89,7 @@ function calculateShield(lang = 'en') {
     hardness: 'Hardness',
     hp: 'HP',
     bt: 'BT',
+    repairDC: 'Repair DC',
     gp: 'gp',
     ft: 'ft.',
     m: 'ft.',
@@ -105,6 +109,7 @@ function calculateShield(lang = 'en') {
       <li><strong>${labels.bulk}:</strong> ${shield.bulk}</li>
       <li><strong>${labels.hardness}:</strong> ${finalHardness}</li>
       <li><strong>${labels.hp}:</strong> ${finalHP} (${labels.bt}${finalBT})</li>
+      <li><strong>${labels.repairDC}:</strong> ${repairDC}</li>
     </ul>
   `;
 }
