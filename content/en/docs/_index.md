@@ -1,5 +1,6 @@
 ---
 title: "PF2 Tools"
+type: docs
 ---
 
 # Pathfinder 2e Remastered Tools
