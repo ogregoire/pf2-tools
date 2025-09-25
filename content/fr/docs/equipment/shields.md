@@ -26,12 +26,12 @@ Outil de référence pour les boucliers de Pathfinder 2e Remastered.
 
 | Rune | Niveau | Prix | Bonus de solidité | Bonus PV | Bonus SR | Maximum |
 |------|--------|------|-------------------|----------|----------|---------|
-| Mineure | 4 | 75 po | +3 | +44 | +22 | 8 Solidité, 64 PV, 32 SR |
-| Inférieure | 7 | 300 po | +3 | +52 | +26 | 10 Solidité, 80 PV, 40 SR |
-| Modérée | 10 | 900 po | +3 | +64 | +32 | 13 Solidité, 104 PV, 52 SR |
-| Supérieure | 13 | 2 500 po | +5 | +80 | +40 | 15 Solidité, 120 PV, 60 SR |
-| Majeure | 16 | 8 000 po | +5 | +84 | +42 | 17 Solidité, 136 PV, 68 SR |
-| Suprême | 19 | 32 000 po | +7 | +108 | +54 | 20 Solidité, 160 PV, 80 SR |
+| Mineure | 4 | 75 po | +3 | +44 | +22 | Solidité 8, 64 PV et SR 32 |
+| Inférieure | 7 | 300 po | +3 | +52 | +26 | Solidité 10, 80 PV et SR 40 |
+| Modérée | 10 | 900 po | +3 | +64 | +32 | Solidité 13, 104 PV et SR 52 |
+| Supérieure | 13 | 2 500 po | +5 | +80 | +40 | Solidité 15, 120 PV et SR 60 |
+| Majeure | 16 | 8 000 po | +5 | +84 | +42 | Solidité 17, 136 PV et SR 68 |
+| Suprême | 19 | 32 000 po | +7 | +108 | +54 | Solidité 20, 160 PV et SR 80 |
 
 ## Calculateur de bouclier
 
