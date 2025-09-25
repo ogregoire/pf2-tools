@@ -9,9 +9,9 @@ Tables de référence des DD pour Pathfinder 2e Remastered.
 
 ## DD simples
 
-**Source:** Livre du MJ, p. 50
+**Source:** Livre du MJ, p. 53
 
-| Rang de compétence | DD |
+| Rang de maîtrise | DD |
 |--------------------|-----|
 | Inexpérimenté | 10 |
 | Qualifié | 15 |
@@ -21,7 +21,7 @@ Tables de référence des DD pour Pathfinder 2e Remastered.
 
 ## DD par niveau
 
-**Source:** Livre du MJ, p. 51
+**Source:** Livre du MJ, p. 53
 
 | Niveau | DD |
 |--------|-----|
@@ -51,3 +51,16 @@ Tables de référence des DD pour Pathfinder 2e Remastered.
 | 23 | 46 |
 | 24 | 48 |
 | 25 | 50 |
+
+## Ajustements de DD
+
+**Source:** Livre du MJ, p. 53
+
+| Difficulté | Ajustement | Rareté |
+|------------|------------|--------|
+| Incroyablement facile | -10 | — |
+| Très facile | -5 | — |
+| Facile | -2 | — |
+| Difficile | +2 | Peu courant |
+| Très difficile | +5 | Rare |
+| Incroyablement difficile | +10 | Unique |

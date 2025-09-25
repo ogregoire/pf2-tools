@@ -51,3 +51,16 @@ DC reference tables for Pathfinder 2e Remastered.
 | 23 | 46 |
 | 24 | 48 |
 | 25 | 50 |
+
+## DC Adjustments
+
+**Source:** GM Core pg. 51
+
+| Difficulty | Adjustment | Rarity |
+|------------|------------|--------|
+| Incredibly easy | -10 | — |
+| Very easy | -5 | — |
+| Easy | -2 | — |
+| Hard | +2 | Uncommon |
+| Very hard | +5 | Rare |
+| Incredibly hard | +10 | Unique |
