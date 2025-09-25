@@ -9,6 +9,8 @@ Shield reference tool for Pathfinder 2e Remastered.
 
 ## Base Shields
 
+**Source:** Player Core pg. 277
+
 | Shield | Price | AC Bonus | Speed Penalty | Bulk | Hardness | HP (BT) |
 |--------|-------|----------|---------------|------|----------|---------|
 | Buckler | 1 gp | +1 | — | L | 3 | 6 (3) |
@@ -17,3 +19,48 @@ Shield reference tool for Pathfinder 2e Remastered.
 | Tower Shield | 10 gp | +2/+4* | -5 ft. | 4 | 5 | 20 (10) |
 
 *Tower Shield grants +2 AC normally, or +4 AC when using the Take Cover action.
+
+## Reinforcing Runes
+
+**Source:** Player Core pg. 285
+
+| Rune | Level | Price | Hardness Bonus | HP Bonus | BT Bonus | Maximum |
+|------|-------|-------|----------------|----------|----------|---------|
+| Minor | 4 | 75 gp | +3 | +44 | +22 | 8 Hardness, 64 HP, 32 BT |
+| Lesser | 7 | 300 gp | +3 | +52 | +26 | 10 Hardness, 80 HP, 40 BT |
+| Moderate | 10 | 900 gp | +3 | +64 | +32 | 13 Hardness, 104 HP, 52 BT |
+| Greater | 13 | 2,500 gp | +5 | +80 | +40 | 15 Hardness, 120 HP, 60 BT |
+| Major | 16 | 8,000 gp | +5 | +84 | +42 | 17 Hardness, 136 HP, 68 BT |
+| Supreme | 19 | 32,000 gp | +7 | +108 | +54 | 20 Hardness, 160 HP, 80 BT |
+
+## Shield Calculator
+
+<div class="shield-calculator">
+  <div>
+    <label for="shield-select-en">Base Shield:</label>
+    <select id="shield-select-en" onchange="calculateShield('en')">
+      <option value="buckler">Buckler</option>
+      <option value="wooden">Wooden Shield</option>
+      <option value="steel" selected>Steel Shield</option>
+      <option value="tower">Tower Shield</option>
+    </select>
+  </div>
+
+  <div>
+    <label for="rune-select-en">Reinforcing Rune:</label>
+    <select id="rune-select-en" onchange="calculateShield('en')">
+      <option value="none" selected>None</option>
+      <option value="minor">Minor</option>
+      <option value="lesser">Lesser</option>
+      <option value="moderate">Moderate</option>
+      <option value="greater">Greater</option>
+      <option value="major">Major</option>
+      <option value="supreme">Supreme</option>
+    </select>
+  </div>
+
+  <div id="shield-result-en"></div>
+</div>
+
+<script src="/pf2-tools/js/equipment.js"></script>
+<script>calculateShield('en');</script>
