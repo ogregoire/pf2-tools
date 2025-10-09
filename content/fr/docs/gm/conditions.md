@@ -11,84 +11,58 @@ Référence pour tous les états dans Pathfinder 2e Remastered.
 
 ## Tous les états
 
-**À terre :** Vous êtes allongé au sol. Vous subissez un malus de circonstance de –2 aux jets d'attaque. Les seules actions de déplacement que vous pouvez utiliser tant que vous êtes à terre sont Ramper et vous Relever.
+**Accéléré.** Vous gagnez une action supplémentaire au début de votre tour à chaque round. La plupart du temps, les effets qui vous accélèrent précisent le type d'actions supplémentaires que vous pouvez entreprendre. Dans la mesure ou l'état accéléré produit son effet au début de votre tour, vous ne gagnez pas immédiatement des actions si vous êtes accéléré pendant votre tour.
 
-**Accéléré :** Vous gagnez 1 action supplémentaire au début de votre tour à chaque round. Beaucoup d'effets qui vous rendent accéléré spécifient les types d'actions que vous pouvez utiliser avec cette action supplémentaire.
+**Affaibli.** Vous subissez un malus de statut égal à l'intensité de votre état. Il s'applique aux jets et DD basés sur la Force, dont les jets d'attaque au corps à corps basés sur la Force, les jets de dégâts basés sur la Force et les tests d'Athlétisme.
 
-**Affaibli :** Vous êtes physiquement affaibli. Vous subissez un malus de statut égal à la valeur de l'état aux jets et DD basés sur la Force, incluant les jets d'attaque de corps à corps basés sur la Force, les jets de dégâts basés sur la Force, et les tests d'Athlétisme.
+**À terre.** Vous êtes pris par surprise et subissez un malus de circonstances de −2 à vos jets d'attaque. Les seules actions de déplacement que vous pouvez entreprendre sont Ramper ou Se relever.  Si vous Vous relevez, vous mettez un terme à l'état à terre. Vous pouvez vous Mettre à l'abri lorsque vous êtes à terre, ce qui vous confère un abri important contre les attaques à distance (mais vous restez pris par surprise).
 
-**Agrippé :** Une créature, un objet, ou de la magie vous maintient en place. Vous êtes pris au dépourvu et ne pouvez pas bouger sauf pour vous Échapper ou vous libérer de force.
+**Aveugle.** Vous ne pouvez pas voir. Tous les terrains normaux sont pour vous des terrains difficiles. Vous ne pouvez rien détecter à l'aide de votre vue. Vous échouez automatiquement aux tests de Perception reposant sur la vue et, si votre vision est votre seul sens précis, vous subissez un malus de statut de −4 à vos tests de Perception.  Vous êtes immunisé contre les effets visuels. L'état aveugle est prépondérant sur l'état ébloui.
 
-**Amical :** Cet état reflète la disposition d'une créature envers un personnage particulier, et n'affecte que les créatures qui ne sont pas des personnages joueurs.
+**Brisé.** Il est impossible d'utiliser un objet brisé et il n'accorde plus de bonus. Une armure brisée donne toujours son bonus d'objet à la CA, mais s'accomwpagne d'un malus de statut à la CA (légère : –1 ; intermédiaire : –2 ; lourde :–3). Un effet qui brise un objet réduit ses PV à la valeur du Seuil de rupture.
 
-**Aveuglé :** Vous ne pouvez pas voir. Tout terrain normal est un terrain difficile pour vous.
+**Confus.** Vous êtes pris par surprise, ne traitez personne comme votre allié, ne pouvez pas Retarder, Préparer ni utiliser une réaction. Vous utilisez la totalité de vos actions pour Frapper ou lancer des tours de magie offensifs. Le MJ détermine leur cible au hasard. Si vous n'avez pas d'autre option, vous vous prenez pour cible et vous touchez automatiquement.  Si vous êtes dans l'impossibilité d'attaquer ou de lancer des sorts, vous marmonnez des choses incohérentes et gaspillez vos actions. Chaque fois que vous subissez des dégâts provenant d'une attaque ou d'un sort, vous pouvez faire un test nu DD 11 afin de mettre un terme à cet état.
 
-**Blessé :** Vous êtes blessé et saignez. Blessé inclut toujours une valeur, et si vous gagnez l'état mourant, vous augmentez votre valeur de mourant de votre valeur de blessé.
+**Contrôlé.** Celui qui vous contrôle décide de vos actions.
 
-**Brisé :** Les objets avec des dégâts égaux ou supérieurs à leur Seuil de rupture gagnent cet état. Un objet brisé ne peut pas être utilisé pour sa fonction normale, ni accorder de bonus.
+**Dégâts persistant.** Au lieu de recevoir des dégâts persistants immédiatement, ils surviennent à la fin de chacun de vos tours et vous devez lancez les dés chaque fois que cela se produit. Après avoir subi des dégâts persistants, faites un test nu DD 15 afin de déterminer si ceux‑ci prennent fin. Sur un succès, vous mettez un terme à l'état.  Un allié ou vous‑même pouvez vous aider afin de pouvoir faire un nouveau test nu. Cela vous demande généralement 2 actions et doit raisonnablement améliorer vos chances d'éliminer la source des dégâts. Le MJ peut réduire le DD du test à 10, décréter que les dégâts prennent fin automatiquement ou modifier le nombre d'actions.
 
-**Caché :** Tant que vous êtes caché d'une créature, cette créature sait où vous êtes mais ne peut pas vous voir. Vous devenez typiquement caché en utilisant Discrétion pour vous Cacher.
 
-**Condamné :** Votre âme est arrachée de votre corps. Condamné diminue la valeur de mourant à laquelle vous mourez.
+**Drainé.** Vous subissez un malus de statut égal à l'intensité de votre état drainé. Il s'applique à vos tests basés sur la Constitution, comme les jets de Vigueur. Vous perdez une quantité de points de vie égale à votre niveau multiplié par l'intensité de votre état drainé. Votre maximum de points de vie est réduit du même montant. Lorsque vous récupérez des points de vie en vous reposant 8 h, l'intensité de votre état drainé diminue de 1, mais vous ne récupérez pas tout de suite les points de vie perdus.
 
-**Confus :** Vous attaquez sans discernement. Vous ne pouvez pas prendre de réactions, et vous devez utiliser toutes vos actions pour Frapper ou lancer des tours de magie offensifs, bien que vous puissiez choisir vos cibles au hasard à chaque tour.
+**Ébloui.** Toutes les créatures et tous les objets sont masqués à vos yeux.
 
-**Contrôlé :** Quelqu'un d'autre prend vos décisions pour vous, habituellement parce que vous êtes commandé ou magiquement dominé. Le contrôleur dicte comment vous agissez et peut vous faire utiliser n'importe laquelle de vos actions, incluant les attaques, réactions, ou même Retarder.
+**Effrayé.** Vous subissez un malus de statut égal à l'intensité de cet état à tous vos tests et DD. L'intensité diminue de 1 à la fin de chacun de vos tours.
 
-**Dégâts persistants :** Les dégâts persistants viennent d'effets comme l'acide ou la brûlure et apparaissent comme "dégâts persistants [type]" ou "dégâts persistants [montant] [type]." Au lieu de subir les dégâts persistants immédiatement, vous les subissez à la fin de chacun de vos tours.
+**Empoigné.** Vous êtes immobilisé et pris par surprise. Vous devez réussir un test nu DD 5 si vous tentez une action de manipulation, sinon elle est perdue.
 
-**Drainé :** Une perte de sang ou quelque chose de similaire a drainé votre vitalité. Vous subissez un malus de statut égal à la valeur de l'état aux tests et DD basés sur la Constitution, incluant les jets de Vigueur et les tests pour récupérer des maladies et poisons.
+**En fuite.** Pendant votre tour, vous utilisez toutes vos actions pour tenter de vous éloigner aussi vite que possible de la source de votre état. Vous ne pouvez pas utiliser les actions Retarder ou Préparer.
 
-**Ébloui :** Vos sens précis sont altérés par une lumière accablante. Tant que vous êtes ébloui, vous pouvez toujours voir, mais toutes les créatures et objets sont masqués pour vous.
+**Entravé.** Vous êtes attaché et ne pouvez pas bouger, ou une créature vous a saisi et immobilisé. Vous vous trouvez dans les états pris par surprise et immobilisé, et vous ne pouvez entreprendre aucune action dotée des traits attaque ou manipulation, sauf pour Vous échapper ou Ouvrir vos liens de force. L'état entravé est prépondérant sur l'état empoigné.
 
-**Écœuré :** Vous vous sentez mal. Vous subissez un malus de statut égal à la valeur de l'état à tous vos tests et DD.
+**Étourdi.** Vous ne pouvez pas effectuer d'action. L'intensité de l'état étourdi indique le nombre total d'actions que vous perdez. Chaque fois que vous regagnez des actions, réduisez leur nombre de l'intensité de votre état étourdi, puis réduisez l'intensité de votre état étourdi d'un montant égal au nombre d'actions perdues. Si cet état est associé à une durée, vous perdez toutes vos actions pendant cette durée. L'état étourdi est prépondérant sur l'état ralenti. Les actions perdues du fait de l'état étourdi sont prises en compte dans le décompte des actions perdues du fait de l'état ralenti.
 
-**Effrayé :** Vous êtes saisi par la peur et luttez pour contrôler vos nerfs. Vous subissez un malus de statut égal à la valeur de l'état à tous vos tests et DD.
+**Fasciné.** Vous subissez un malus de statut de −2 à vos tests de Perception et de compétences et vous ne pouvez pas entreprendre d'actions dotées du trait concentration, sauf si elles sont liées à l'objet de votre fascination. Cet état prend fin si une créature entreprend une action hostile contre vous ou l'un de vos alliés.
 
-**En fuite :** Vous êtes forcé de fuir à cause de la peur ou d'une autre compulsion. À votre tour, vous devez dépenser chacune de vos actions à essayer d'échapper à la source de l'état en fuite.
+**Fatigué.** Vous subissez un malus de statut de −1 à votre CA et à vos jets de sauvegarde. Quand vous explorez, vous ne pouvez pas choisir d'activité d'exploration. Vous vous remettez de l'état fatigué au terme d'une nuit complète de repos.
 
-**Encombré :** Vous portez plus de poids que vous ne pouvez gérer. Tant que vous êtes encombré, vous êtes maladroit 1 et subissez un malus de 3 mètres à toutes vos Vitesses.
+**Immobilisé.** Vous ne pouvez entreprendre aucune action dotée du trait déplacement. Si vous êtes immobilisé par quelque chose qui vous maintient en place et qu'une force extérieure tente de vous faire quitter votre espace, cette force doit réussir un test contre le DD de l'effet ou la défense (généralement le DD de Vigueur) de la créature qui vous maintient en place.
 
-**Entravé :** Vous êtes attaché et pouvez à peine bouger, ou une créature vous a immobilisé. Vous avez les états pris au dépourvu et immobilisé, et vous ne pouvez pas utiliser d'actions avec les traits attaque ou manipulation sauf pour tenter de vous Échapper ou Forcer l'ouverture de vos liens.
+*Malade.** Vous subissez un malus de statut égal à l'intensité de cet état à tous vos tests et DD. Vous ne pouvez rien ingérer de votre propre chef. Vous pouvez dépenser une action pour vomir, ce qui vous permet de faire un jet de Vigueur contre le DD de l'effet vous rendant malade.  Sur un succès, réduisez l'intensité de l'état de 1 (ou de 2 pour un succès critique).
 
-**Étourdi :** Vous êtes devenu insensé. Vous ne pouvez pas utiliser d'actions avec le trait concentration sauf si elles ou leurs conséquences prévues sont liées au sujet qui vous a étourdi.
+**Maladroit.** Vous subissez un malus de statut égal à l'intensité de l'état maladroit aux tests et DD basés sur la Dextérité, comme votre CA, vos jets de Réflexes, vos jets d'attaque à distance et vos tests de compétences basés sur Acrobaties, Discrétion et Larcin.
 
-**Fasciné :** Vous êtes contraint de concentrer votre attention sur quelque chose. Vous subissez un malus de statut de –2 à la Perception et aux tests de compétence, et vous ne pouvez pas utiliser d'actions avec le trait concentration sauf si elles ou leurs conséquences prévues sont liées au sujet de votre fascination.
+**Paralysé.** Vous êtes pris par surprise et vous ne pouvez pas agir, sauf pour Vous souvenir de quelque chose et entreprendre des actions qui font seulement appel à votre esprit (ces actions sont déterminées par le MJ). Vous ne pouvez pas Chercher.
 
-**Fatigué :** Vous êtes fatigué et ne pouvez pas rassembler beaucoup d'énergie. Vous subissez un malus de statut de –1 à la CA et aux jets de sauvegarde.
+**Pétrifié.** Vous ne pouvez pas agir ou percevoir quoi que ce soit.  Vous devenez un objet dont l'Encombrement est le double de votre Encombrement normal (généralement 12 pour une créature Moyenne ou 6 pour une Petite créature), avec CA 9, Solidité 8 et autant de PV que de votre vivant.
 
-**Hostile :** Cet état reflète la disposition d'une créature envers un personnage particulier, et n'affecte que les créatures qui ne sont pas des personnages joueurs.
+**Pris par surprise.** Vous subissez un malus de circonstances de −2 à la CA.
 
-**Immobilisé :** Vous ne pouvez pas utiliser d'actions avec le trait déplacement. Si vous êtes immobilisé par quelque chose qui vous maintient en place et qu'une force externe vous déplacerait de votre espace, la force doit réussir un test contre soit le DD de l'effet vous maintenant en place ou la défense pertinente de la créature vous tenant.
+**Ralenti.** Quand vous regagnez des actions au début de votre tour, vous réduisez leur nombre d'un montant égal à l'intensité de l'état ralenti. Si vous êtes ralenti pendant votre tour, vous ne perdez pas vos actions immédiatement.
 
-**Inamical :** Cet état reflète la disposition d'une créature envers un personnage particulier, et n'affecte que les créatures qui ne sont pas des personnages joueurs.
+**Sourd.** Vous ne pouvez pas entendre. Vous obtenez automatiquement un échec critique aux tests de Perception basés sur l'ouïe. Vous subissez un malus de statut de −2 aux tests de Perception destinés à déterminer l'initiative et aux tests qui font intervenir l'ouïe combinée à d'autres sens. Si vous accomplissez une action dotée du trait audible, vous devez réussir un test nu DD 5 sinon vous perdez cette action.  Vous êtes immunisé contre les effets audibles.
 
-**Inaperçu :** Vous êtes dans l'angle mort d'une créature ou évitez autrement complètement son attention. Une créature qui échoue à vous remarquer n'est pas consciente de votre présence.
+**Stupéfié.** Vous subissez un malus de statut égal à l'intensité de cet état aux tests et DD basés sur l'Intelligence, la Sagesse et le Charisme, dont les jets de Volonté, les jets et DD d'attaque de sort et les tests de compétence appropriés. Si vous Lancez un sort, il est interrompu, sauf si vous réussissez un test nu (DD = 5 + intensité).
 
-**Inconscient :** Vous dormez ou avez été assommé. Vous ne pouvez pas agir. Vous subissez un malus de statut de –4 à la CA, Perception, et aux jets de Réflexes, et vous avez les états aveuglé et pris au dépourvu.
+**Surchargé.** Vous êtes maladroit 1 et vous subissez un malus de −3 m à toutes vos Vitesses (sans pouvoir descendre en dessous de 1,5 m).
 
-**Indifférent :** Cet état reflète la disposition d'une créature envers un personnage particulier, et n'affecte que les créatures qui ne sont pas des personnages joueurs.
-
-**Invisible :** Les créatures ne peuvent pas vous voir. Vous n'êtes pas détecté par toutes les créatures. Les créatures peuvent deviner où vous êtes en vous entendant, vous rendant caché pour elles au lieu de non détecté.
-
-**Maladroit :** Vous subissez un malus de statut égal à la valeur de l'état aux tests et DD basés sur la Dextérité, incluant la CA, les jets de Réflexes, les jets d'attaque à distance, et les tests de compétence utilisant la Dextérité.
-
-**Masqué :** Tant que vous êtes masqué d'une créature, comme dans un épais brouillard, vous êtes difficile à voir pour cette créature. Vous pouvez toujours être observé, mais vous êtes assez difficile à voir qu'il faut un test nu DD 5 réussi pour qu'une créature vous cible avec une attaque, un sort, ou un autre effet.
-
-**Mourant :** Vous êtes inconscient et proche de la mort. Tant que vous êtes mourant, vous ne pouvez pas agir. Quand vous êtes réduit à 0 Point de vie, vous devenez mourant 1.
-
-**Non détecté :** Quand vous n'êtes pas détecté par une créature, cette créature ne peut pas du tout vous voir, n'a aucune idée de l'espace que vous occupez, et ne peut pas vous cibler.
-
-**Paralysé :** Votre corps est figé sur place. Vous avez l'état pris au dépourvu et ne pouvez pas agir sauf pour vous Remémorer des connaissances et utiliser des actions qui ne nécessitent que votre esprit.
-
-**Pétrifié :** Vous avez été transformé en pierre. Vous ne pouvez pas agir, ni ressentir quoi que ce soit. Vous devenez un objet avec une Solidité égale à celle de la pierre en laquelle vous avez été transformé.
-
-**Pris au dépourvu :** Vous êtes distrait ou autrement incapable de concentrer votre pleine attention sur la défense. Vous subissez un malus de circonstance de –2 à la CA.
-
-**Ralenti :** Vous avez moins d'actions. Ralenti inclut toujours une valeur. Quand vous regagnez vos actions au début de votre tour, réduisez le nombre d'actions que vous regagnez de votre valeur de ralenti.
-
-**Serviable :** Cet état reflète la disposition d'une créature envers un personnage particulier, et n'affecte que les créatures qui ne sont pas des personnages joueurs.
-
-**Sourd :** Vous ne pouvez pas entendre. Vous échouez automatiquement aux tests de Perception qui nécessitent d'entendre, et vous subissez un malus de statut de –2 aux tests de Perception pour l'initiative et aux tests qui impliquent le son mais reposent aussi sur d'autres sens.
-
-**Stupéfié :** Vos pensées et instincts sont troublés. Vous subissez un malus de statut égal à la valeur de l'état aux tests et DD basés sur l'Intelligence, la Sagesse, et le Charisme, incluant les jets de Volonté, les jets d'attaque de sort, les DD de sort, et les tests de compétence qui utilisent ces valeurs de caractéristique.
