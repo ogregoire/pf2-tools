@@ -7,6 +7,14 @@ weight: 4
 
 Track initiative order, hit points, and conditions during an encounter, following the Pathfinder 2e Remastered rules.
 
+<div id="combat-tracker"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  initCombatTracker('en');
+});
+</script>
+
 ## How to use
 
 - **Add combatants** with their name, initiative, and maximum HP. The list is sorted by initiative when combat starts; use the ↑/↓ arrows to reorder at any time (for example when someone Delays).
@@ -21,11 +29,3 @@ Track initiative order, hit points, and conditions during an encounter, followin
 - Everything is saved in your browser, so a page reload keeps the combat going.
 
 **Source:** Player Core pg. 443–447, GM Core
-
-<div id="combat-tracker"></div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  initCombatTracker('en');
-});
-</script>

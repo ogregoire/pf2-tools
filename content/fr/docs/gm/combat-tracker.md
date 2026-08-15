@@ -7,6 +7,14 @@ weight: 4
 
 Suivez l'ordre d'initiative, les points de vie et les états pendant une rencontre, selon les règles de Pathfinder 2e Remastered.
 
+<div id="combat-tracker"></div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  initCombatTracker('fr');
+});
+</script>
+
 ## Mode d'emploi
 
 - **Ajoutez les combattants** avec leur nom, leur initiative et leurs PV maximum. La liste est triée par initiative au début du combat ; utilisez les flèches ↑/↓ pour réordonner à tout moment (par exemple quand quelqu'un Retarde).
@@ -21,11 +29,3 @@ Suivez l'ordre d'initiative, les points de vie et les états pendant une rencont
 - Tout est enregistré dans votre navigateur : recharger la page ne perd pas le combat.
 
 **Source :** Livre des joueurs, p. 443–447, Livre du maître de jeu
-
-<div id="combat-tracker"></div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  initCombatTracker('fr');
-});
-</script>
