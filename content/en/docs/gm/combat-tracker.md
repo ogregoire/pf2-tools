@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   - Conditions lasting **until the start or end of the inflicter's next turn**, or a number of **rounds**, end automatically at the right moment.
   - **Slowed**, **stunned**, and **quickened** action changes are computed at the start of the turn (stunned loses its value as actions are lost).
   - **Dying** creatures get a recovery check reminder (flat DC 10 + dying value) at the start of their turn.
+- **Clear combat** empties the combatant list, resets the round counter, and clears the log. It asks for a confirmation next to the button before wiping anything.
 - Everything is saved in your browser, so a page reload keeps the combat going.
 
 **Source:** Player Core pg. 443–447, GM Core

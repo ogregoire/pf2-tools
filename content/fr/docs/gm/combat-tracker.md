@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
   - Les états qui durent **jusqu'au début ou la fin du prochain tour de la source**, ou un nombre de **rounds**, prennent fin automatiquement au bon moment.
   - Les changements d'actions dus à **ralenti**, **étourdi** et **accéléré** sont calculés au début du tour (étourdi diminue à mesure que des actions sont perdues).
   - Les créatures **mourantes** reçoivent un rappel de jet de récupération (test nu DD 10 + intensité de mourant) au début de leur tour.
+- **Vider le combat** supprime tous les combattants, remet le compteur de rounds à zéro et efface le journal. Une confirmation apparaît à côté du bouton avant tout effacement.
 - Tout est enregistré dans votre navigateur : recharger la page ne perd pas le combat.
 
 **Source :** Livre des joueurs, p. 443–447, Livre du maître de jeu

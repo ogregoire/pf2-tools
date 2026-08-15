@@ -61,8 +61,9 @@ const ctI18n = {
     round: 'Round',
     nextTurn: 'Next combatant',
     sortByInitiative: 'Sort by initiative',
-    resetCombat: 'Reset combat',
-    resetConfirm: 'Remove all combatants and reset the tracker?',
+    clearCombat: 'Clear combat',
+    clearConfirm: 'Remove all combatants?',
+    clearYes: 'Clear everything',
     hp: 'HP',
     damage: 'Damage',
     heal: 'Heal',
@@ -142,8 +143,9 @@ const ctI18n = {
     round: 'Round',
     nextTurn: 'Combattant suivant',
     sortByInitiative: "Trier par initiative",
-    resetCombat: 'Réinitialiser le combat',
-    resetConfirm: 'Retirer tous les combattants et réinitialiser le suivi ?',
+    clearCombat: 'Vider le combat',
+    clearConfirm: 'Retirer tous les combattants ?',
+    clearYes: 'Tout effacer',
     hp: 'PV',
     damage: 'Dégâts',
     heal: 'Soins',
@@ -206,7 +208,7 @@ const ctStorageKey = 'pf2CombatTracker';
 let ctLang = 'en';
 let ctState = null;
 // Transient UI state (not persisted)
-let ctUi = { panelFor: null, cond: '', value: 1, dmgType: '', duration: 'manual', durRounds: 1, source: null };
+let ctUi = { panelFor: null, cond: '', value: 1, dmgType: '', duration: 'manual', durRounds: 1, source: null, confirmClear: false };
 
 function ctT(key, params) {
   let s = ctI18n[ctLang][key] || key;
@@ -342,10 +344,22 @@ function ctRemove(id) {
   ctRender();
 }
 
-function ctReset() {
-  if (!window.confirm(ctT('resetConfirm'))) return;
+// Two-step inline confirmation: browsers can suppress window.confirm after
+// repeated dialogs, which would make the button silently do nothing.
+function ctAskClear() {
+  ctUi.confirmClear = true;
+  ctRenderClear();
+}
+
+function ctCancelClear() {
+  ctUi.confirmClear = false;
+  ctRenderClear();
+}
+
+function ctClear() {
   ctState = ctDefaultState();
   ctUi.panelFor = null;
+  ctUi.confirmClear = false;
   ctSave();
   ctRender();
 }
@@ -737,6 +751,23 @@ function ctRender() {
   const logEl = document.getElementById('ct-log');
   logEl.innerHTML = ctState.log.map(l => '<div>' + ctEsc(l) + '</div>').join('');
   document.getElementById('ct-next').disabled = ctState.participants.length === 0;
+  ctRenderClear();
+}
+
+function ctRenderClear() {
+  const wrap = document.getElementById('ct-clear-wrap');
+  if (!wrap) return;
+  const empty = ctState.participants.length === 0 && ctState.log.length === 0 && ctState.round === 1;
+  if (ctUi.confirmClear) {
+    wrap.innerHTML =
+      '<span class="ct-clear-confirm">' + ctEsc(ctT('clearConfirm')) + ' ' +
+        '<button class="ct-btn ct-btn-danger" onclick="ctClear()">' + ctEsc(ctT('clearYes')) + '</button> ' +
+        '<button class="ct-btn" onclick="ctCancelClear()">' + ctEsc(ctT('cancel')) + '</button>' +
+      '</span>';
+  } else {
+    wrap.innerHTML = '<button class="ct-btn ct-btn-danger" onclick="ctAskClear()"' + (empty ? ' disabled' : '') + '>' +
+      ctEsc(ctT('clearCombat')) + '</button>';
+  }
 }
 
 function ctInjectStyles() {
@@ -782,6 +813,7 @@ function ctInjectStyles() {
 .ct-panel input[type=number] { width: 4rem; }
 .ct-panel input[type=text] { width: 9rem; }
 .ct-empty { opacity: .7; font-style: italic; }
+.ct-clear-confirm { display: inline-flex; align-items: center; gap: .35rem; font-size: .9em; }
 #ct-log { max-height: 14rem; overflow-y: auto; border: 1px solid var(--gray-200, #ddd); border-radius: .5rem; padding: .5rem .75rem; font-size: .85em; }
 #ct-log div { padding: .1rem 0; border-bottom: 1px dotted var(--gray-100, #eee); }
 `;
@@ -815,7 +847,7 @@ function initCombatTracker(lang) {
       '<span class="ct-round-label" id="ct-round"></span>' +
       '<button class="ct-btn ct-btn-primary" id="ct-next" onclick="ctNextTurn()">' + ctEsc(ctT('nextTurn')) + '</button>' +
       '<button class="ct-btn" onclick="ctSortByInitiative()">' + ctEsc(ctT('sortByInitiative')) + '</button>' +
-      '<button class="ct-btn ct-btn-danger" onclick="ctReset()">' + ctEsc(ctT('resetCombat')) + '</button>' +
+      '<span id="ct-clear-wrap"></span>' +
     '</div>' +
     '<div id="ct-list"></div>' +
     '<h3>' + ctEsc(ctT('log')) + '</h3>' +
