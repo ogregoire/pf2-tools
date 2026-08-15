@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ## How to use
 
-- **Add combatants** with their name, initiative, and maximum HP. The list is sorted by initiative when combat starts; use the ↑/↓ arrows to reorder at any time (for example when someone Delays).
+- **Add combatants** with their name, initiative, AC, maximum HP, type (player, enemy, ally, or other), and a count to add several identical creatures at once (they are numbered automatically). The list is sorted by initiative when combat starts; use the ↑/↓ arrows to reorder at any time (for example when someone Delays).
 - **Damage / Heal**: enter an amount and press the matching button. A combatant reduced to 0 HP automatically becomes **dying** (1 + wounded value) and **unconscious**; healing them removes dying and increases **wounded** by 1.
 - **Add condition**: press the button on a combatant, choose the condition (and its value when the condition has one, e.g. Frightened 1), an optional duration, and the inflicter — by default the creature whose turn it is. The **Add** button enables once the selection is valid.
 - **Next combatant** advances the turn and applies automatic effects:

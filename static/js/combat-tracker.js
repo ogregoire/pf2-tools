@@ -53,6 +53,10 @@ const ctI18n = {
     name: 'Name',
     initiative: 'Initiative',
     maxHp: 'Max HP',
+    ac: 'AC',
+    type: 'Type',
+    count: 'Count',
+    types: { player: 'Player', enemy: 'Enemy', ally: 'Ally', other: 'Other' },
     addParticipant: 'Add combatant',
     round: 'Round',
     nextTurn: 'Next combatant',
@@ -130,6 +134,10 @@ const ctI18n = {
     name: 'Nom',
     initiative: 'Initiative',
     maxHp: 'PV max',
+    ac: 'CA',
+    type: 'Type',
+    count: 'Nombre',
+    types: { player: 'Joueur', enemy: 'Ennemi', ally: 'Allié', other: 'Autre' },
     addParticipant: 'Ajouter un combattant',
     round: 'Round',
     nextTurn: 'Combattant suivant',
@@ -265,23 +273,34 @@ function ctFindCond(p, type) {
 function ctAddParticipant() {
   const nameEl = document.getElementById('ct-add-name');
   const initEl = document.getElementById('ct-add-init');
+  const acEl = document.getElementById('ct-add-ac');
   const hpEl = document.getElementById('ct-add-hp');
+  const typeEl = document.getElementById('ct-add-type');
+  const countEl = document.getElementById('ct-add-count');
   const name = nameEl.value.trim();
   if (!name) { nameEl.focus(); return; }
   const init = parseInt(initEl.value, 10) || 0;
+  const ac = Math.max(0, parseInt(acEl.value, 10) || 0);
   const maxHp = Math.max(0, parseInt(hpEl.value, 10) || 0);
-  const p = { id: ctState.nextId++, name: name, init: init, maxHp: maxHp, hp: maxHp, conditions: [] };
-  ctState.participants.push(p);
+  const type = typeEl.value || 'other';
+  const count = Math.min(50, Math.max(1, parseInt(countEl.value, 10) || 1));
+  for (let k = 0; k < count; k++) {
+    const label = count > 1 ? name + ' ' + (k + 1) : name;
+    const p = { id: ctState.nextId++, name: label, init: init, ac: ac, maxHp: maxHp, hp: maxHp, type: type, conditions: [] };
+    ctState.participants.push(p);
+    ctLog('logJoined', { name: p.name, init: p.init });
+  }
   if (ctState.round === 1 && (ctState.currentId === null || ctCurrentIndex() === 0)) {
     // Combat not really underway yet: keep list sorted by initiative
     ctState.participants.sort((a, b) => b.init - a.init);
     ctState.currentId = ctState.participants[0].id;
   }
-  if (ctState.currentId === null) ctState.currentId = p.id;
-  ctLog('logJoined', { name: p.name, init: p.init });
+  if (ctState.currentId === null) ctState.currentId = ctState.participants[0].id;
   nameEl.value = '';
   initEl.value = '';
+  acEl.value = '';
   hpEl.value = '';
+  countEl.value = '1';
   ctSave();
   ctRender();
   nameEl.focus();
@@ -680,10 +699,13 @@ function ctParticipantHtml(p, index) {
   const isCurrent = p.id === ctState.currentId;
   const hpStr = p.maxHp > 0 ? p.hp + ' / ' + p.maxHp : String(p.hp);
   const chips = p.conditions.map(c => ctCondChip(p, c)).join(' ');
-  return '<div class="ct-row' + (isCurrent ? ' ct-current' : '') + '">' +
+  const type = p.type || 'other';
+  return '<div class="ct-row ct-type-' + type + (isCurrent ? ' ct-current' : '') + '">' +
     '<div class="ct-row-main">' +
       '<span class="ct-init">' + ctEsc(p.init) + '</span>' +
-      '<span class="ct-name">' + (isCurrent ? '▶ ' : '') + ctEsc(p.name) + '</span>' +
+      '<span class="ct-name">' + (isCurrent ? '▶ ' : '') + ctEsc(p.name) +
+        ' <span class="ct-type-badge ct-badge-' + type + '">' + ctEsc(ctI18n[ctLang].types[type]) + '</span></span>' +
+      '<span class="ct-ac">' + ctEsc(ctT('ac')) + ': <strong>' + (p.ac > 0 ? ctEsc(p.ac) : '—') + '</strong></span>' +
       '<span class="ct-hp">' + ctEsc(ctT('hp')) + ': <strong>' + ctEsc(hpStr) + '</strong></span>' +
       '<span class="ct-dmg">' +
         '<input type="number" id="ct-dmg-' + p.id + '" min="1" placeholder="0">' +
@@ -726,7 +748,17 @@ function ctInjectStyles() {
 .ct-add-form label { display: flex; flex-direction: column; font-size: .85em; gap: .15rem; }
 .ct-add-form input { padding: .3rem .4rem; }
 #ct-add-name { width: 12rem; }
-#ct-add-init, #ct-add-hp { width: 5rem; }
+#ct-add-init, #ct-add-hp, #ct-add-ac, #ct-add-count { width: 5rem; }
+.ct-add-form select { padding: .3rem .4rem; }
+.ct-type-badge { font-size: .7em; font-weight: normal; border-radius: .75rem; padding: .05rem .5rem; vertical-align: middle; color: #fff; }
+.ct-badge-player { background: #2563ab; }
+.ct-badge-enemy { background: #b03030; }
+.ct-badge-ally { background: #2e7d46; }
+.ct-badge-other { background: #777; }
+.ct-row.ct-type-player { border-left: 4px solid #2563ab; }
+.ct-row.ct-type-enemy { border-left: 4px solid #b03030; }
+.ct-row.ct-type-ally { border-left: 4px solid #2e7d46; }
+.ct-row.ct-type-other { border-left: 4px solid #777; }
 .ct-btn { padding: .3rem .6rem; border: 1px solid var(--gray-200, #ccc); border-radius: .35rem; background: var(--body-background, #fff); cursor: pointer; font-size: .9em; }
 .ct-btn:hover:not(:disabled) { border-color: var(--color-link, #05b); }
 .ct-btn:disabled { opacity: .45; cursor: not-allowed; }
@@ -769,7 +801,14 @@ function initCombatTracker(lang) {
     '<div class="ct-add-form">' +
       '<label>' + ctEsc(ctT('name')) + '<input type="text" id="ct-add-name"></label>' +
       '<label>' + ctEsc(ctT('initiative')) + '<input type="number" id="ct-add-init"></label>' +
+      '<label>' + ctEsc(ctT('ac')) + '<input type="number" id="ct-add-ac" min="0"></label>' +
       '<label>' + ctEsc(ctT('maxHp')) + '<input type="number" id="ct-add-hp" min="0"></label>' +
+      '<label>' + ctEsc(ctT('type')) + '<select id="ct-add-type">' +
+        ['player', 'enemy', 'ally', 'other']
+          .map(t => '<option value="' + t + '">' + ctEsc(ctI18n[ctLang].types[t]) + '</option>')
+          .join('') +
+      '</select></label>' +
+      '<label>' + ctEsc(ctT('count')) + '<input type="number" id="ct-add-count" min="1" max="50" value="1"></label>' +
       '<button class="ct-btn ct-btn-primary" onclick="ctAddParticipant()">' + ctEsc(ctT('addParticipant')) + '</button>' +
     '</div>' +
     '<div class="ct-toolbar">' +
